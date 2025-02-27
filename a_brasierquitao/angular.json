@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist",
             "baseHref": "/a_brasierquitao/",
+            "deployUrl": "/a_brasierquitao/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
