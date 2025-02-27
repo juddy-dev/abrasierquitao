@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #630FA5;
+    --primary-hover-color: #4E0C82;
+    --secondary-color: #9DFF70;
+    --secondary-hover-color: #9DFF70;
+    --text-color: #1E1E1E;
+    --text-secondary-color: #F5F0FA;
+    --background-color: #F5F0FA;
+
+    --logo-url: url('/png/icon_small.png');
+
+}
+
+.dark-theme {
+    --primary-color: #630FA5;
+    --primary-hover-color: #4E0C82;
+    --secondary-color: #9DFF70;
+    --secondary-hover-color: #9DFF70;
+    --text-color: #C4C4C4;
+    --text-secondary-color: #F5F0FA;
+    --background-color: #2E064D;
+
+    --logo-url: url('/png/icon_small_dark.png');
+
+}
+
+/* FUENTE */
+@font-face {
+  font-family: 'Sriracha';
+  src: url('/fonts/Sriracha-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Sriracha';
+}

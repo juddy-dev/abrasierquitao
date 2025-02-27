@@ -1,0 +1,22 @@
+<div class="main-container">
+
+    <header>
+        <nav>
+            <div class="logo"><img alt="Logo">A Brasier Quita'o</div>
+            <ul class="nav-links">
+                <li><a (click)="openTabSpotify()">Spotify</a></li>
+                <li><a (click)="openTabYoutube()">Youtube</a></li>
+                <li><a (click)="openTabInstagram()">Instagram</a></li>
+                <li><a (click)="openTabTiktok()">Tiktok</a></li>
+            </ul>
+            <button class="button-theme" (click)="toggleTheme()">
+                <span *ngIf="isDarkMode()" class="material-symbols-outlined">light_mode</span>
+                <span *ngIf="!isDarkMode()" class="material-symbols-outlined">dark_mode</span>
+            </button>
+        </nav>
+    </header>
+
+
+
+
+</div>
