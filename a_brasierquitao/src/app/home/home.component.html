@@ -4,10 +4,10 @@
         <nav>
             <div class="logo"><img alt="Logo">A Brasier Quita'o</div>
             <ul class="nav-links">
-                <li><a (click)="openTabSpotify()">Spotify</a></li>
-                <li><a (click)="openTabYoutube()">Youtube</a></li>
-                <li><a (click)="openTabInstagram()">Instagram</a></li>
-                <li><a (click)="openTabTiktok()">Tiktok</a></li>
+                <li><a (click)="openTabSpotify()"><svg [cIcon]="icons.cibSpotify" width="24" title="Spotify Icon"></svg></a></li>
+                <li><a (click)="openTabYoutube()"><svg [cIcon]="icons.cibYoutube" width="24" title="Youtube Icon"></svg></a></li>
+                <li><a (click)="openTabInstagram()"><svg [cIcon]="icons.cibInstagram" width="24" title="Instagram Icon"></svg></a></li>
+                <li><a (click)="openTabTiktok()"><svg [cIcon]="icons.cibTiktok" width="24" title="Tiktok Icon"></svg></a></li>
             </ul>
             <button class="button-theme" (click)="toggleTheme()">
                 <span *ngIf="isDarkMode()" class="material-symbols-outlined">light_mode</span>
@@ -16,6 +16,69 @@
         </nav>
     </header>
 
+
+    <section class="home-section">
+        <video autoplay loop muted playsinline>
+            <source src="/mp4/landing_page.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1>Potenciando el cambio a través del podcasting</h1>
+        </div>
+    </section>
+
+
+    <section class="ecommerce-section">
+        <h1>El feminismo no se vende pero sí se sostiene</h1>
+        <span>Con la compra de estos productos podemos seguir alzándonos todos los días</span>
+        
+        <div class="product-container">
+            <div *ngFor="let product of products" class="product" (click)="openTab(product.url)">
+              <img src="{{product.picture}}" alt="product">
+              <span>{{product.price}}</span>
+              <button class="button-secondary">COMPRAR</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsor-section">
+        <h1>Patrocinadores</h1>
+        <div class="sponsor-container">
+            <div *ngFor="let sponsor of sponsors" class="sponsor" (click)="openTab(sponsor.link)">
+              <img src="{{sponsor.picture}}" alt="product">
+              <a>{{sponsor.name}}</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="podcaster-section">
+        <h1>Conoce a nuestras Podcaster</h1>
+        <div class="card-container">
+            <div *ngFor="let podcaster of podcasterList" class="card" (click)="openTab(podcaster.url)">
+              <img src="{{podcaster.picture}}" alt="Profile">
+              <h3>{{podcaster.name}}</h3>
+              <p>{{podcaster.description}}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="glossary-section">
+        <h1>Algunas palabras que escucharás en el podcast</h1>
+        <div class="list-container">
+            <div *ngFor="let word of wordsSupport" class="item">
+              <h3>{{word.title}}</h3>
+              <p>{{word.description}}</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo"><img alt="Logo">A Brasier Quita'o</div>
+        <span>Copyright © 2066 juddy.dev. All Rights Reserved.</span>
+    </footer>
 
 
 
