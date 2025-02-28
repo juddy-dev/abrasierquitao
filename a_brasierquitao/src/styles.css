@@ -17,7 +17,7 @@
     --text-black: #000;
 
 
-    --logo-url: url('/png/icon_small.png');
+    --logo-url: url('icon_small.png');
 
 }
 
@@ -37,7 +37,7 @@
     --text-white: #F5F0FA;
     --text-black: #000;
 
-    --logo-url: url('/png/icon_small_dark.png');
+    --logo-url: url('icon_small_dark.png');
 }
 
 body {
