@@ -60,6 +60,8 @@ nav {
     flex-direction: row;
     gap: 1rem;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0 1rem;
 }
 
 .nav-links li {
@@ -108,7 +110,7 @@ nav {
     width: 100%;
 }
 
-.card-container .card {
+.card {
     background: var(--background-color-opposite);
     padding: 20px;
     border-radius: 10px;
@@ -123,25 +125,25 @@ nav {
     cursor: pointer;
 }
 
-.card-container .card:hover {
+.card:hover {
     box-shadow: 0px 0px 27px var(--shadow-secondary);
 }
 
-.card-container .card img {
+.card img {
     width: 128px;
     height: 128px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.card-container .card h3 {
+.card h3 {
     margin: 0;
     font-size: 1.2rem;
     color: var(--text-color-opposite);
     font-family: 'Sriracha';
 }
 
-.card-container .card p {
+.card p {
     color: var(--text-color-opposite);
 }
 
@@ -256,14 +258,14 @@ nav {
 
 .product span {
     position: absolute;
-    background-color: var(--secondary-color);
+    background-color: var(--tag-color);
     padding: 9px;
     border-radius: 8px;
     right: 10px;
     top: 10px;
     font-weight: 600;
     font-size: 1.25rem;
-    color: var(--text-black);
+    color: var(--tag-text-color);
 }
 
 .sponsor-section {
@@ -275,7 +277,7 @@ nav {
 }
 .sponsor-container {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
@@ -312,7 +314,7 @@ nav {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 1024px) {
     nav {
         display: flex;
         flex-direction: row;
@@ -346,6 +348,32 @@ nav {
         cursor: pointer;
     }
 
+    .sponsor {
+        background: transparent;
+        border-radius: 10px;
+        text-align: center;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+    .product {
+        background: transparent;
+        border-radius: 10px;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+    }
+
     .logo {
         display: flex;
         flex-direction: row;
@@ -357,9 +385,13 @@ nav {
 
 
     .logo img{
-        content: var(--logo-url);
+        /*content: var(--logo-url);*/
         width: 48px;
         height: auto;
+    }
+
+    footer {
+        padding: 1rem;
     }
 
     footer span {

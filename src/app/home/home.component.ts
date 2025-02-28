@@ -47,22 +47,22 @@ export class HomeComponent {
 
   products = [ 
     {
-      url:"",
+      url:"https://forms.gle/vfKKBweyUXaZPV8Q7",
       picture: "producto1.png",
       price: "$50.000"
     },
     {
-      url:"",
+      url:"https://forms.gle/vfKKBweyUXaZPV8Q7",
       picture: "producto2.png",
       price: "$30.000"
     },
     {
-      url:"",
+      url:"https://forms.gle/vfKKBweyUXaZPV8Q7",
       picture: "producto3.png",
       price: "$20.000"
     },
     {
-      url:"",
+      url:"https://forms.gle/vfKKBweyUXaZPV8Q7",
       picture: "producto4.png",
       price: "$15.000"
     }
