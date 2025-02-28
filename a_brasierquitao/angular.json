@@ -14,8 +14,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist",
-            "baseHref": "/a_brasierquitao/",
-            "deployUrl": "/a_brasierquitao/",
+            "baseHref": "/abrasierquitao/",
+            "deployUrl": "/abrasierquitao/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

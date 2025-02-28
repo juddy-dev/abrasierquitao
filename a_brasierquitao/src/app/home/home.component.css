@@ -38,7 +38,7 @@ section {
 }
 
 .logo img{
-    content: var(--logo-url);
+    /*content: var(--logo-url);*/
     width: 64px;
     height: auto;
 }

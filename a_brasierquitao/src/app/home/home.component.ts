@@ -19,13 +19,13 @@ export class HomeComponent {
     {
       name: 'Giomara Aristizabal',
       description: 'Soy una mujer carismática cuya voz incomoda a quienes temen el cambio, porque desafío el status quo y exijo justicia sin pedir permiso.',
-      picture: '/png/foto-giho.png',
+      picture: 'foto-giho.png',
       url: 'https://www.linkedin.com/in/gihomara-aristizabal-morales-95507b115/'
     },
     {
       name: 'Dora Saldarriaga',
       description: 'Soy una mujer de origen campesina que tiene como apuesta vital ser feliz y lo hago a través de la defensa de los derechos humanos de las mujeres y las personas excluidas.',
-      picture: '/png/foto-dora.png',
+      picture: 'foto-dora.png',
       url: 'https://www.linkedin.com/in/dora-cecilia-saldarriaga-grisales-a773032a0/'
     }
   ];
@@ -48,22 +48,22 @@ export class HomeComponent {
   products = [ 
     {
       url:"",
-      picture: "/png/producto1.png",
+      picture: "producto1.png",
       price: "$50.000"
     },
     {
       url:"",
-      picture: "/png/producto2.png",
+      picture: "producto2.png",
       price: "$30.000"
     },
     {
       url:"",
-      picture: "/png/producto3.png",
+      picture: "producto3.png",
       price: "$20.000"
     },
     {
       url:"",
-      picture: "/png/producto4.png",
+      picture: "producto4.png",
       price: "$15.000"
     }
   ];
@@ -75,7 +75,7 @@ export class HomeComponent {
       link: "https://www.juddy.dev/"
     },
     {
-      picture: "/png/deal.png",
+      picture: "deal.png",
       name: "Click para ser parte",
       link: ""
     }
