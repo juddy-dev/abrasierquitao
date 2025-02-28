@@ -70,7 +70,7 @@ export class HomeComponent {
 
   sponsors = [ 
     {
-      picture: "/jpeg/juddy-dev.jpeg",
+      picture: "juddy-dev.jpeg",
       name: "juddy.dev",
       link: "https://www.juddy.dev/"
     },
